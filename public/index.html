@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div id="appContainer" class="flex-column">
+        <header>
+            <div class="container flex-column flex-center">
+                <h1>Chat-O-Round</h1>
+                <p class="light-text">Quickest way to text across</p>
+            </div>
+        </header>
+
+        <div id="mainContent" class="container flex-grow-1 flex-column ">
+            <section id="login" class="">
+                <h2 class="text-center">Get Started</h2>
+                <form id="loginForm" class="flex">
+                    <input type="text" class="flex-grow-1" name="username" id="usernameInput" placeholder="Username">
+                    <button id="loginBtn">Chat!</button>
+                </form>
+            </section>
+            <section id="chat" class="hidden flex-grow-1 flex-column">
+                <div id="messagesList" class="flex-grow-1">
+                    
+                </div>
+                <form id="messageForm" class="flex mb-2">
+                    <input type="text" class="flex-grow-1" name="message" id="messageInput" placeholder="Start Typing...">
+                    <button id="sendBtn">Send</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.js"></script>
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>
